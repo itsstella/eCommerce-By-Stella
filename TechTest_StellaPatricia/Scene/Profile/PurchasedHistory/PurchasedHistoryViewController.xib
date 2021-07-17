@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PurchasedHistoryViewController" customModule="TechTest_StellaPatricia" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="orf-CF-cdJ" id="dRL-RS-AfR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Cr-vb-Wga">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZJ-MD-1qU">
+                            <rect key="frame" x="16" y="55.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="72X-sm-lAY"/>
+                                <constraint firstAttribute="width" constant="25" id="ror-Ga-Hhq"/>
+                            </constraints>
+                            <state key="normal" image="icon_arrow"/>
+                            <connections>
+                                <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="FrV-7H-bFf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchased History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-BC-YGj">
+                            <rect key="frame" x="57" y="50" width="341" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="JjC-gZ-7Tq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.32156862749999998" green="0.23921568630000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.77647058820000003" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pgW-BC-YGj" secondAttribute="bottom" constant="8" id="5CA-1c-MFK"/>
+                        <constraint firstAttribute="trailing" secondItem="pgW-BC-YGj" secondAttribute="trailing" constant="16" id="90m-6P-acV"/>
+                        <constraint firstItem="pgW-BC-YGj" firstAttribute="leading" secondItem="8ZJ-MD-1qU" secondAttribute="trailing" constant="16" id="Got-9Y-OKG"/>
+                        <constraint firstItem="8ZJ-MD-1qU" firstAttribute="centerY" secondItem="pgW-BC-YGj" secondAttribute="centerY" id="IF5-w1-wTf"/>
+                        <constraint firstItem="8ZJ-MD-1qU" firstAttribute="leading" secondItem="9Cr-vb-Wga" secondAttribute="leading" constant="16" id="MWz-zK-bWV"/>
+                        <constraint firstAttribute="height" constant="94" id="NwJ-ae-HLe"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="orf-CF-cdJ">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Xax-Im-cSw"/>
+                        <outlet property="delegate" destination="-1" id="0rK-Er-q2q"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="orf-CF-cdJ" secondAttribute="trailing" id="9w1-Q7-pto"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="orf-CF-cdJ" secondAttribute="bottom" id="FMg-3j-D8x"/>
+                <constraint firstItem="orf-CF-cdJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WwL-dG-dxl"/>
+                <constraint firstItem="9Cr-vb-Wga" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gdk-ap-ihX"/>
+                <constraint firstItem="orf-CF-cdJ" firstAttribute="top" secondItem="9Cr-vb-Wga" secondAttribute="bottom" id="qw3-a9-lYe"/>
+                <constraint firstItem="9Cr-vb-Wga" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-44" id="rPT-Wu-6Pk"/>
+                <constraint firstItem="9Cr-vb-Wga" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vgJ-Rb-DeJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_arrow" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>

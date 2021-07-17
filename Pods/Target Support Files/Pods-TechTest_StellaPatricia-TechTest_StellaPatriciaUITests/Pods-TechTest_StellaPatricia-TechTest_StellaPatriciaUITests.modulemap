@@ -1,0 +1,6 @@
+framework module Pods_TechTest_StellaPatricia_TechTest_StellaPatriciaUITests {
+  umbrella header "Pods-TechTest_StellaPatricia-TechTest_StellaPatriciaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

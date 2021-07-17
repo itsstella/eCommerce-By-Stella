@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-TechTest_StellaPatricia/Pods-TechTest_StellaPatricia-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework
